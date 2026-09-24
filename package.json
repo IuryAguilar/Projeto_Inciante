@@ -1,0 +1,21 @@
+{
+  "name": "projeto_inciante",
+  "version": "1.0.0",
+  "description": "Projeto de nível iniciante",
+  "homepage": "https://github.com/IuryAguilar/Projeto_Inciante#readme",
+  "bugs": {
+    "url": "https://github.com/IuryAguilar/Projeto_Inciante/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IuryAguilar/Projeto_Inciante.git"
+  },
+  "license": "MIT",
+  "author": "Iury Aguilar Deles",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  }
+}
