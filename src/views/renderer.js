@@ -9,3 +9,11 @@ const func = async () => {
 }
 
 func()
+
+const elements = {
+    calculatorBtn: document.getElementById('calculator')
+}
+
+elements.calculatorBtn.addEventListener("click", () => {
+    api.open()
+})
