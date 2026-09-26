@@ -1,8 +1,8 @@
 const { contextBridge, ipcRenderer } = require('electron/renderer')
 
 contextBridge.exposeInMainWorld('versions', {
-    node: () => process.versions.node,
     chrome: () => process.versions.chrome,
+    node: () => process.versions.node,
     electron: () => process.versions.electron,
     ping: () => ipcRenderer.invoke('ping')
 })
