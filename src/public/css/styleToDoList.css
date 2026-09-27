@@ -1,0 +1,63 @@
+.container-toDoList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a3d2b;
+    border: 2px solid #327452;
+    margin-top: 50px;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 30px;
+    color: #edf4ef;
+    .btn{
+        cursor: pointer;
+        border: 2px solid #327452;
+        border-radius: 5px;
+        background-color: #327452;
+        color: #edf4ef;
+        font-size: 13px;
+        font-weight: bold;
+        width: 140px;
+        height: 30px;
+        transition: all 0.5s ease;
+    }
+    .btn:hover{
+        background-color: #1a3d2b;
+        transform: scale(1.1);
+    }
+    .deleteBtn{
+        cursor: pointer;
+        border: 2px solid #1a3d2b;
+        border-radius: 50px;
+        background-color: #edf4ef;
+        color: #1a3d2b;
+        font-size: 10px;
+        font-weight: bold;
+        width: 60px;
+        height: 30px;
+        margin-bottom: 3px;
+        transition: all 0.5s ease;
+    }
+    .deleteBtn:hover{
+        color: #edf4ef;
+        background-color: red;
+        transform: scale(1.1);
+    }
+    p{
+        cursor: default;
+    }
+    li{
+        display: flex;
+        cursor: pointer;
+        align-items: baseline;
+        justify-content: space-between;
+        width: 200px;
+    }
+    #taskList {
+        background-color: #327452;
+        padding: 5px;
+        border-radius: 15px;
+        color: black;
+    }
+
+}

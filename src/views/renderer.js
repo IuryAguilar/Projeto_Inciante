@@ -11,9 +11,13 @@ const func = async () => {
 func()
 
 const elements = {
-    calculatorBtn: document.getElementById('calculator')
+    calculatorBtn: document.getElementById('calculator'),
+    toDoListBtn: document.getElementById('toDoList')
 }
 
 elements.calculatorBtn.addEventListener("click", () => {
-    api.open()
+    api.openCalculator()
+})
+elements.toDoListBtn.addEventListener("click", () => {
+    api.openToDoList()
 })

@@ -31,12 +31,31 @@ const calculatorWindow = () => {
     }
 }
 
+const toDoListWindow = () => {
+    const father = BrowserWindow.getFocusedWindow()
+    if (father) {
+        const toDoList = new BrowserWindow({
+            width: 1200,
+            height: 800,
+            resizable: false,
+            parent: father,
+            modal:true
+        })
+
+        toDoList.loadFile('src/views/lista_de_tarefas.html')
+    }
+}
+
 app.whenReady().then(() => {
     ipcMain.handle('ping', () => 'pong')
     createWindow()
 
     ipcMain.on('open-calculator', () => {
         calculatorWindow()
+    })
+
+    ipcMain.on('open-toDoList', () => {
+        toDoListWindow()
     })
 
     app.on('activate', () => {

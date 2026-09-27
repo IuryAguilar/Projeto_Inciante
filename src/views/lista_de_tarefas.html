@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="../public/css/styleHome.css">
+    <link rel="stylesheet" href="../public/css/styleToDoList.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de tarefas</h1>
+    </header>
+    <div class="container-toDoList">
+        <label for="taskInput">Digite uma tarefa:</label> <br>
+        <input type="text" id="taskInput"> <br>
+        <button id="addTaskBtn" class="btn">Adicionar</button>
+        <p id="errorP"></p>
+        <p id="contTask">Você não tem tarefas</p>
+        <div class="taskListInterface">
+            <ul id="taskList">
+            </ul>
+        </div>
+        <button id="deleteAllTaskBtn" class="btn">Limpar Tarefas</button>
+    </div>
+    <footer>
+        <p>Iury Aguilar Deles</p>
+    </footer>
+
+    <script src="../public/js/scriptToDoList.js"></script>
+</body>
+</html>
