@@ -12,7 +12,8 @@ func()
 
 const elements = {
     calculatorBtn: document.getElementById('calculator'),
-    toDoListBtn: document.getElementById('toDoList')
+    toDoListBtn: document.getElementById('toDoList'),
+    currencyConverterBtn: document.getElementById('currencyConverter')
 }
 
 elements.calculatorBtn.addEventListener("click", () => {
@@ -20,4 +21,7 @@ elements.calculatorBtn.addEventListener("click", () => {
 })
 elements.toDoListBtn.addEventListener("click", () => {
     api.openToDoList()
+})
+elements.currencyConverterBtn.addEventListener("click", () => {
+    api.openCurrencyConverter()
 })

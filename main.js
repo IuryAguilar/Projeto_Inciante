@@ -46,6 +46,21 @@ const toDoListWindow = () => {
     }
 }
 
+const currencyConverterWindow = () => {
+    const father = BrowserWindow.getFocusedWindow()
+    if (father) {
+        const currencyConverter = new BrowserWindow({
+            width: 1200,
+            height: 800,
+            resizable: false,
+            parent: father,
+            modal:true
+        })
+
+        currencyConverter.loadFile('src/views/conversor_de_moedas.html')
+    }
+}
+
 app.whenReady().then(() => {
     ipcMain.handle('ping', () => 'pong')
     createWindow()
@@ -56,6 +71,10 @@ app.whenReady().then(() => {
 
     ipcMain.on('open-toDoList', () => {
         toDoListWindow()
+    })
+
+    ipcMain.on('open-currencyConverter', () => {
+        currencyConverterWindow()
     })
 
     app.on('activate', () => {

@@ -9,5 +9,6 @@ contextBridge.exposeInMainWorld('versions', {
 
 contextBridge.exposeInMainWorld('api', {
     openCalculator: () => ipcRenderer.send('open-calculator'),
-    openToDoList: () => ipcRenderer.send('open-toDoList')
+    openToDoList: () => ipcRenderer.send('open-toDoList'),
+    openCurrencyConverter: () => ipcRenderer.send('open-currencyConverter')
 })

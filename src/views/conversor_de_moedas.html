@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <title>Conversor de Moedas</title>
+    <link rel="stylesheet" href="../public/css/styleHome.css">
+    <link rel="stylesheet" href="../public/css/styleCurrencyConverter.css">
+</head>
+<body>
+    <header>
+        <h1>Conversor de Moedas</h1>
+    </header>
+    <div class="container-currencyConverter">
+        <label for="moneyInput">Digite um valor para converter:</label> <br>
+        <input type="number" id="moneyInput">
+        <div class="currencies-container">
+            <label for="currencyToConvert">Converter de:</label> <br>
+            <select name="currency" id="currencyToConvert">
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="CNY">Renminbi Chinês / Yuan (CNY)</option>
+                <option value="CHF">Franco Suíço (CHF)</option>
+                <option value="AUD">Dólar Australiano (AUD)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <option value="BRL">Real Brasileiro(BRL)</option>
+            </select> <br>
+            <button id="changeCurrencyBtn">&#x21BB</button> <br>
+            <label for="currency">Para:</label> <br>
+            <select name="currency" id="currencySelect">
+                <option value="USD">Dólar Americano (USD)</option>
+                <option value="EUR">Euro (EUR)</option>
+                <option value="JPY">Iene Japonês (JPY)</option>
+                <option value="GBP">Libra Esterlina (GBP)</option>
+                <option value="CNY">Renminbi Chinês / Yuan (CNY)</option>
+                <option value="CHF">Franco Suíço (CHF)</option>
+                <option value="AUD">Dólar Australiano (AUD)</option>
+                <option value="CAD">Dólar Canadense (CAD)</option>
+                <option value="BRL">Real Brasileiro(BRL)</option>
+            </select>        
+        </div>
+        <p id="result">-</p>
+        <button id="convertBtn">Converter</button>
+    </div>
+
+    <footer>
+        <p>Iury Aguilar Deles</p>
+    </footer>
+
+    <script src="../public/js/scriptCurrencyConverter.js"></script>
+</body>
+</html>
