@@ -9,6 +9,8 @@
     max-width: 500px;
     border-radius: 30px;
     color: #edf4ef;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     .btn{
         cursor: pointer;
         border: 2px solid #327452;
@@ -52,6 +54,7 @@
         align-items: baseline;
         justify-content: space-between;
         width: 200px;
+        text-shadow: none;
     }
     #taskList {
         background-color: #327452;

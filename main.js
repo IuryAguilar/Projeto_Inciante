@@ -61,6 +61,21 @@ const currencyConverterWindow = () => {
     }
 }
 
+const timerWindow = () => {
+    const father = BrowserWindow.getFocusedWindow()
+    if (father) {
+        const timer = new BrowserWindow({
+            width: 1200,
+            height: 800,
+            resizable: false,
+            parent: father,
+            modal:true
+        })
+
+        timer.loadFile('src/views/cronometro.html')
+    }
+}
+
 app.whenReady().then(() => {
     ipcMain.handle('ping', () => 'pong')
     createWindow()
@@ -75,6 +90,10 @@ app.whenReady().then(() => {
 
     ipcMain.on('open-currencyConverter', () => {
         currencyConverterWindow()
+    })
+
+    ipcMain.on('open-timer', () => {
+        timerWindow()
     })
 
     app.on('activate', () => {
