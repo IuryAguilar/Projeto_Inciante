@@ -14,7 +14,8 @@ const elements = {
     calculatorBtn: document.getElementById('calculator'),
     toDoListBtn: document.getElementById('toDoList'),
     currencyConverterBtn: document.getElementById('currencyConverter'),
-    timerBtn: document.getElementById('timerBtn')
+    timerBtn: document.getElementById('timerBtn'),
+    passwordGeneratorBtn: document.getElementById('passwordGeneratorBtn')
 }
 
 elements.calculatorBtn.addEventListener("click", () => {
@@ -28,4 +29,7 @@ elements.currencyConverterBtn.addEventListener("click", () => {
 })
 elements.timerBtn.addEventListener("click", () => {
     api.openTimer()
+})
+elements.passwordGeneratorBtn.addEventListener("click", () => {
+    api.openPasswordGenerator()
 })

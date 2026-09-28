@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <title>Gerador de senhas</title>
+    <link rel="stylesheet" href="../public/css/styleHome.css">
+    <link rel="stylesheet" href="../public/css/stylePasswordGenerator.css">
+</head>
+<body>
+    <header>
+        <h1>Gerador de senhas</h1>
+    </header>
+    <div class="container-passwordGenerator">
+        <div class="generator">
+            <p id="result">-</p>
+            <button id="generatePasswordBtn">Gerar Senha</button> <br>
+            <label for="passwordSize">Escolha o tamanho da senha:</label> <br>
+            <input type="number" id="passwordSize">
+            <p>Deve incluir:</p>
+        </div>
+        <div class="password-options">
+            <input type="checkbox" id="numberChk">
+            <label for="numberChk">Números</label>
+            <br>
+            <input type="checkbox" id="uppercaseChk">
+            <label for="uppercaseChk">Letras Maiúsculas</label>
+            <br>
+            <input type="checkbox" id="symbolChk">
+            <label for="symbolChk">Símbolos</label>
+        </div>
+    </div>
+    <footer>
+        <p>Iury Aguilar Deles</p>
+    </footer>
+
+    <script src="../public/js/scriptPasswordGenerator.js"></script>
+</body>
+</html>
