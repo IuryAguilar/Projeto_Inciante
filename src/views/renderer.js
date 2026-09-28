@@ -15,7 +15,8 @@ const elements = {
     toDoListBtn: document.getElementById('toDoList'),
     currencyConverterBtn: document.getElementById('currencyConverter'),
     timerBtn: document.getElementById('timerBtn'),
-    passwordGeneratorBtn: document.getElementById('passwordGeneratorBtn')
+    passwordGeneratorBtn: document.getElementById('passwordGeneratorBtn'),
+    cpfValidatorBtn: document.getElementById('cpfValidatorBtn')
 }
 
 elements.calculatorBtn.addEventListener("click", () => {
@@ -32,4 +33,7 @@ elements.timerBtn.addEventListener("click", () => {
 })
 elements.passwordGeneratorBtn.addEventListener("click", () => {
     api.openPasswordGenerator()
+})
+elements.cpfValidatorBtn.addEventListener("click", () => {
+    api.openCpfValidator()
 })

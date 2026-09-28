@@ -89,6 +89,20 @@ const passwordGeneratorWindow = () => {
         passwordGenerator.loadFile('src/views/gerador_de_senhas.html')
     }
 }
+const cpfValidatorWindow = () => {
+    const father = BrowserWindow.getFocusedWindow()
+    if (father) {
+        const cpfValidator = new BrowserWindow({
+            width: 1200,
+            height: 800,
+            resizable: false,
+            parent: father,
+            modal:true
+        })
+
+        cpfValidator.loadFile('src/views/validador_de_cpf.html')
+    }
+}
 
 app.whenReady().then(() => {
     ipcMain.handle('ping', () => 'pong')
@@ -112,6 +126,10 @@ app.whenReady().then(() => {
 
     ipcMain.on('open-passwordGenerator', () => {
         passwordGeneratorWindow()
+    })
+
+    ipcMain.on('open-cpfValidator', () => {
+        cpfValidatorWindow()
     })
 
     app.on('activate', () => {
