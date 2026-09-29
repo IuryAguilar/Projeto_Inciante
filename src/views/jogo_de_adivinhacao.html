@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'"/>
+    <title>Jogo de Adivinhação</title>
+    <link rel="stylesheet" href="../public/css/styleHome.css">
+    <link rel="stylesheet" href="../public/css/styleGuessingGame.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo de Adivinhação</h1>
+    </header>
+    <div class="container-guessingGame">
+        <h2><b>Guessing Game</b></h2>
+        <div class="guessingArea">
+            <label for="guessing" id="guessLb"> <b>Digite um número</b></label> <br>
+            <input type="number" id="guessing" name="guessing"> <br>
+            <button id="guessBtn"><b>Confirmar</b></button>
+        </div>
+
+        <div class="gameP">
+            <p id="result">-</p>
+            <h3><b>Tentativas:</b></h3>
+            <p id="attempts">0</p>
+        </div>
+
+        <button id="newGameBtn"><b>Novo Jogo</b></button>
+        <div id="dificultInterface">
+            <form>
+                <input type="radio" id="easyRBtn" name="dificult">
+                <label for="easyRBtn">Fácil</label>
+
+                <input type="radio" id="mediumRBtn" name="dificult" checked>
+                <label for="mediumRBtn">Médio</label>
+
+                <input type="radio" id="hardRBtn" name="dificult">
+                <label for="hardRBtn">Difícil</label>
+            </form>
+        </div>
+
+    </div>
+    <footer>
+        <p>Iury Aguilar Deles</p>
+    </footer>
+
+    <script src="../public/js/scriptGuessingGame.js"></script>
+</body>
+</html>

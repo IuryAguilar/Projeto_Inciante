@@ -14,9 +14,10 @@ const elements = {
     calculatorBtn: document.getElementById('calculator'),
     toDoListBtn: document.getElementById('toDoList'),
     currencyConverterBtn: document.getElementById('currencyConverter'),
-    timerBtn: document.getElementById('timerBtn'),
-    passwordGeneratorBtn: document.getElementById('passwordGeneratorBtn'),
-    cpfValidatorBtn: document.getElementById('cpfValidatorBtn')
+    guessingGameBtn: document.getElementById('guessingGame'),
+    timerBtn: document.getElementById('timer'),
+    passwordGeneratorBtn: document.getElementById('passwordGenerator'),
+    cpfValidatorBtn: document.getElementById('cpfValidator')
 }
 
 elements.calculatorBtn.addEventListener("click", () => {
@@ -27,6 +28,9 @@ elements.toDoListBtn.addEventListener("click", () => {
 })
 elements.currencyConverterBtn.addEventListener("click", () => {
     api.openCurrencyConverter()
+})
+elements.guessingGameBtn.addEventListener("click", () => {
+    api.openGuessingGame()
 })
 elements.timerBtn.addEventListener("click", () => {
     api.openTimer()

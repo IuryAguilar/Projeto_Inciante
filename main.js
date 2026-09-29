@@ -60,6 +60,20 @@ const currencyConverterWindow = () => {
         currencyConverter.loadFile('src/views/conversor_de_moedas.html')
     }
 }
+const guessingGameWindow = () => {
+    const father = BrowserWindow.getFocusedWindow()
+    if (father) {
+        const guessingGame = new BrowserWindow({
+            width: 1200,
+            height: 800,
+            resizable: false,
+            parent: father,
+            modal:true
+        })
+
+        guessingGame.loadFile('src/views/jogo_de_adivinhacao.html')
+    }
+}
 
 const timerWindow = () => {
     const father = BrowserWindow.getFocusedWindow()
@@ -118,6 +132,10 @@ app.whenReady().then(() => {
 
     ipcMain.on('open-currencyConverter', () => {
         currencyConverterWindow()
+    })
+
+    ipcMain.on('open-guessingGame', () => {
+        guessingGameWindow()
     })
 
     ipcMain.on('open-timer', () => {

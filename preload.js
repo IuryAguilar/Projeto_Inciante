@@ -11,6 +11,7 @@ contextBridge.exposeInMainWorld('api', {
     openCalculator: () => ipcRenderer.send('open-calculator'),
     openToDoList: () => ipcRenderer.send('open-toDoList'),
     openCurrencyConverter: () => ipcRenderer.send('open-currencyConverter'),
+    openGuessingGame: () => ipcRenderer.send('open-guessingGame'),
     openTimer: () => ipcRenderer.send('open-timer'),
     openPasswordGenerator: () => ipcRenderer.send('open-passwordGenerator'),
     openCpfValidator: () => ipcRenderer.send('open-cpfValidator')
